@@ -11,10 +11,10 @@ from flask_gravatar import Gravatar
 from functools import wraps
 
 # hide SECRET_KEY
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
-load_dotenv()
+#load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("MY_KEY")
